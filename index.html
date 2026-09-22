@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You, Always</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Prata&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="sky"></canvas>
+    <div class="grain"></div>
+    <div class="petals" aria-hidden="true"></div>
+
+    <nav class="nav">
+      <a class="brand" href="#home">A <span>♥</span> M</a>
+      <span class="nav-note">a little universe, made for you</span>
+      <button id="soundButton" class="sound" aria-label="เปิดเสียงบรรยากาศ"><span class="equalizer"><i></i><i></i><i></i></span> sound</button>
+    </nav>
+
+    <main id="home">
+      <section class="hero">
+        <p class="eyebrow reveal">TO THE ONE WHO MAKES EVERYTHING GLOW</p>
+        <h1 class="reveal">In every<br /><em>lifetime,</em><br />I'd find you.</h1>
+        <p class="hero-copy reveal">บางคนเข้ามาในชีวิต แล้วทำให้คำว่า “ตลอดไป”<br />ฟังดูเป็นไปได้จริงขึ้นมา</p>
+        <a class="scroll-cue reveal" href="#letter"><span></span> discover our story</a>
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="heart-field" aria-hidden="true"><div class="heart main-heart">♥</div><div class="ring ring-a"></div><div class="ring ring-b"></div></div>
+      </section>
+
+      <section class="letter section" id="letter">
+        <p class="eyebrow">A NOTE WRITTEN IN STARLIGHT</p>
+        <div class="letter-grid">
+          <div class="chapter-number">01</div>
+          <div>
+            <h2>My favorite<br /><em>place</em> is beside you.</h2>
+            <p class="body-copy">ไม่ใช่เพราะโลกหยุดหมุนเมื่อเราอยู่ด้วยกัน แต่เพราะทุกสิ่งรอบตัวมีความหมายขึ้นมาอย่างน่าประหลาด คุณคือความสบายใจในวันที่วุ่นวาย และเป็นประกายเล็ก ๆ ที่ฉันอยากกลับมามองเสมอ</p>
+            <p class="signature">with all my heart,<br /><span>always yours</span></p>
+          </div>
+          <div class="polaroid tilt">
+            <div class="photo-art"><span>✦</span><div class="moon"></div><div class="hills"></div></div>
+            <p>our kind of magic</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons section">
+        <p class="eyebrow center">THE LITTLE THINGS I ADORE</p>
+        <h2 class="center">A thousand reasons<br />to <em>love</em> you.</h2>
+        <div class="reason-grid">
+          <article class="reason-card"><span>01</span><div class="icon">☼</div><h3>Your light</h3><p>คุณทำให้แม้แต่วันธรรมดา มีแสงอุ่น ๆ ซ่อนอยู่เสมอ</p></article>
+          <article class="reason-card featured"><span>02</span><div class="icon">♡</div><h3>Your heart</h3><p>หัวใจของคุณคือที่พักพิงที่สวยงามที่สุดที่ฉันเคยพบ</p></article>
+          <article class="reason-card"><span>03</span><div class="icon">✧</div><h3>Your magic</h3><p>แค่เป็นตัวคุณ โลกทั้งใบก็ดูพิเศษขึ้นมาแล้ว</p></article>
+        </div>
+      </section>
+
+      <section class="wish section">
+        <div class="wish-glow"></div>
+        <p class="eyebrow center">MAKE A WISH</p>
+        <h2 class="center">Close your eyes.<br /><em>Let the universe listen.</em></h2>
+        <button id="wishButton" class="wish-button"><span>✦</span> send a wish <span>✦</span></button>
+        <p id="wishMessage" class="wish-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made from a million tiny moments</p><div>♥</div><p>FOR YOU — ALWAYS</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
